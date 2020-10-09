@@ -1,8 +1,6 @@
-import * as React from 'react'
-import './button.pcss'
+import * as React from 'react';
+import './button.pcss';
 
-const Button = ({message = 'Hello world'}) => (
-    <button>{message}</button>
-)
+const Button = ({ message = 'Hello world' }) => <button>{message}</button>;
 
-export default Button
+export default Button;

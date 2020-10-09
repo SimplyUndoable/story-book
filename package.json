@@ -15,6 +15,7 @@
     "path": "^0.12.7",
     "postcss": "^8.1.1",
     "postcss-loader": "^4.0.3",
+    "prettier": "2.1.2",
     "sass-loader": "^10.0.2",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
@@ -22,6 +23,7 @@
   },
   "scripts": {
     "start": "start-storybook",
-    "build": "webpack -- mode production"
+    "build": "webpack -- mode production",
+    "pretty": "prettier --single-quote --trailing-comma all --write .storybook src package.json *.{js,ts,tsx,jsx,css,scss,pcss,json}"
   }
 }

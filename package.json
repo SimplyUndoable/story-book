@@ -9,8 +9,13 @@
     "@babel/preset-react": "^7.10.4",
     "@storybook/addon-knobs": "^6.0.26",
     "@storybook/react": "^6.0.26",
+    "@typescript-eslint/parser": "^4.4.0",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-react": "^7.21.3",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "node-sass": "^4.14.1",
     "path": "^0.12.7",
     "postcss": "^8.1.1",
@@ -24,6 +29,8 @@
   "scripts": {
     "start": "start-storybook",
     "build": "webpack -- mode production",
-    "pretty": "prettier --single-quote --trailing-comma all --write .storybook src package.json *.{js,ts,tsx,jsx,css,scss,pcss,json}"
+    "pretty": "prettier --single-quote --trailing-comma all --write .storybook src package.json *.{js,ts,tsx,jsx,css,scss,pcss,json}",
+    "lint": "eslint --fix",
+    "test": "prettier --check"
   }
 }
